@@ -64,15 +64,17 @@ I worry this might take more time to iron out. I'm also concerned about destabil
 
 After a talk with Wiskey`Wonka of the ##Networking@Freenode IRC channel, a few thinkgs became apparent.
 
-1. Inter-brand WDS is [hit or miss](https://en.wikipedia.org/wiki/Wireless_distribution_system#Implementations). 
+### Inter-brand WDS is [hit or miss](https://en.wikipedia.org/wiki/Wireless_distribution_system#Implementations). 
   - The WDS standard is IEEE 802.11-1999 and specifies a 4-adress frame protocol that makes WDS possible.
   - It does not define how WDS implementations are to be constructed or how WDS stations should interact.
-1. Using the OpenWRT wireless firmware may solve the problem.
+### Using the OpenWRT wireless firmware may solve the problem.
   - This is reasonable, as this would provide a consistent WDS implementation.
   - This is not a good solution in this case, as I cannot risk damage to the existing Uverse router, it is a good thing to know for future projects.
-1. The best bet is to use another unit of the same manufacturer and chipset, or preferably the exact same model, and adjoin it to unit A via a ethernet connection.
+### The best bet is to use another unit of the same manufacturer and chipset, or preferably the exact same model, and adjoin it to unit A via a ethernet connection.
   - This seems like the lowest risk solution.
 
-I'm inclined to shy away from attempting to modify the existing router. If the router gets damaged in my modifications, it will cause downtime. 
-
-The 'likely fix' is looking very appealing. The strange ping behavior may be caused by mismatches 
+### Conclusions
+1. I'm inclined to shy away from solutions requiring modifications to the existing router. If the router gets damaged in my modifications, it will cause outages (and resulting losses) that I cannot cover. 
+2. The strange behavior may be caused by mismatches in the router chipsets. I was lucky that the router worked at home.
+3. To my though, the soundest solution is to purchase an additional TP-link router and deploy it building A.
+  - This will cut into my profit, but is the most appealing solution from a support perspective.
