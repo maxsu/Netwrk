@@ -64,16 +64,16 @@ I worry this might take more time to iron out. I'm also concerned about destabil
 
 After a talk with Wiskey`Wonka of the ##Networking@Freenode IRC channel, a few things became apparent.
 
-### Inter-brand WDS is [hit or miss](https://en.wikipedia.org/wiki/Wireless_distribution_system#Implementations). 
-  - The WDS standard is IEEE 802.11-1999 and specifies a 4-adress frame protocol that makes WDS possible.
-  - It does not define how WDS implementations are to be constructed or how WDS stations should interact.
-  - 
+### Inter-brand WDS is [hit or miss](https://en.wikipedia.org/wiki/Wireless_distribution_system#Implementations).
+- The WDS standard is IEEE 802.11-1999 and specifies a 4-adress frame protocol that makes WDS possible.
+- It does not define how WDS implementations are to be constructed or how WDS stations should interact.
+
 ### Using the OpenWRT wireless firmware may solve the problem.
-  - This is reasonable, as this would provide a consistent WDS implementation.
-  - This is not a good solution in this case, as I cannot risk damage to the existing Uverse router, it is a good thing to know for future projects.
+- This is reasonable, as this would provide a consistent WDS implementation.
+- This is not a good solution in this case, as I cannot risk damage to the existing Uverse router, it is a good thing to know for future projects.
 
 ### The best bet is to use another unit of the same manufacturer and chipset, or preferably the exact same model, and adjoin it to unit A via an ethernet connection.
-  - This seems like the lowest risk solution.
+- This seems like the lowest risk solution.
 
 ### Conclusions
 1. I'm inclined to shy away from solutions requiring modifications to the existing router. If the router gets damaged in my modifications, it will cause outages (and resulting losses) that I cannot cover. 
