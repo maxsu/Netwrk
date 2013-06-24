@@ -47,13 +47,32 @@ It occurs to me that I could purchase an additional router ( **unit D** ) and lo
 
 ## My questions
 
-### What could be causing the strange ping behavior?
+### 1. What could be causing the strange ping behavior?
 It is evident that unit B is connected to network A. Any other unit connected to network A can ping unit B's IP. Similarly, any unit connected to network B can also ping B's IP. But for whatever reason, pings cannot tunnel from network B to reach targets on network A. I'd assume that pings from network A cannot reach IPs on network B, though I have yet to test this. 
 
 The end behavior seems to be that units on network B cannot use router A as their gateway. This behavior runs against what I saw when I connected unit B to a home network, where pings and other traffic were able to pass freely across router B.
 
-### Is the 'likely fix' likely to work?
+### 2. Is the 'likely fix' likely to work?
 I could spend some more resources, and purchse an additional router unit for building A. If the problem is that unit A is simply incompatible with WDS, this might turn out to be the best solution. I would use a cheap TP-Link router for this, to ensure compatibility with unit B.
 
-### Should I try some of the trickier solutions I've found with regards to the NVG510?
+### 3. Should I try some of the trickier solutions I've found with regards to the NVG510?
 I worry this might take more time to iron out. I'm also concerned about destabilizing unit A's existing functionality and causing downtime in the building A office.
+
+# Resolutions
+
+## A Quick Chat
+
+After a talk with Wiskey`Wonka of the ##Networking@Freenode IRC channel, a few thinkgs became apparent.
+
+1. Inter-brand WDS is [hit or miss](https://en.wikipedia.org/wiki/Wireless_distribution_system#Implementations). 
+  - The WDS standard is IEEE 802.11-1999 and specifies a 4-adress frame protocol that makes WDS possible.
+  - It does not define how WDS implementations are to be constructed or how WDS stations should interact.
+1. Using the OpenWRT wireless firmware may solve the problem.
+  - This is reasonable, as this would provide a consistent WDS implementation.
+  - This is not a good solution in this case, as I cannot risk damage to the existing Uverse router, it is a good thing to know for future projects.
+1. The best bet is to use another unit of the same manufacturer and chipset, or preferably the exact same model, and adjoin it to unit A via a ethernet connection.
+  - This seems like the lowest risk solution.
+
+I'm inclined to shy away from attempting to modify the existing router. If the router gets damaged in my modifications, it will cause downtime. 
+
+The 'likely fix' is looking very appealing. The strange ping behavior may be caused by mismatches 
