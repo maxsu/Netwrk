@@ -66,7 +66,7 @@ After a talk with Wiskey`Wonka of the ##Networking@Freenode IRC channel, a few t
 
 ### Inter-brand WDS is [hit or miss](https://en.wikipedia.org/wiki/Wireless_distribution_system#Implementations).
 - The WDS standard is IEEE 802.11-1999 and specifies a 4-adress frame protocol that makes WDS possible.
-- It does not define how WDS implementations are to be constructed or how WDS stations should interact.
+- But it *does not* define how WDS implementations are to be constructed or how WDS stations should interact.
 
 ### Using the OpenWRT wireless firmware may solve the problem.
 - This is reasonable, as this would provide a consistent WDS implementation.
