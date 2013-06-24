@@ -9,20 +9,20 @@ My given objective is to move building B's existing terminal deeper into the bui
 
 I am working with 4 pieces of network hardware:
 
-A) A Motorola NVG510 wireless router/modem ( *unit A* ) located in *building A*. Unit A broadcasts its own SSID ( *network A* ), and allows users to connect to a DSL connection provided by AT&T. It currently serves only the nearest part of *building B*.
+A) A Motorola NVG510 wireless router/modem ( **unit A** ) located in **building A**. Unit A broadcasts its own SSID ( **network A** ), and allows users to connect to a DSL connection provided by AT&T. It currently serves only the nearest part of **building B**.
 - Its wireless IP is 192.168.1.254, subnet 255.255.255.0
 - It assigns IP by DHCP in a range from 192.168.1.64 to 192.168.1.128
 - It uses WPA2/PSK
 
-B) A TPlink TL-WR1043 ( *unit B* ) located in building B. It is currently connected to network A via WDS. It provides its own SSDI ( *network B* ).
+B) A TPlink TL-WR1043 ( **unit B** ) located in building B. It is currently connected to network A via WDS. It provides its own SSDI ( **network B** ).
 - It has IP 192.168.1.63. subnet address 255.255.255.0
 - It is slaved to network A using its built in WDS functionality. Its own DHCP functionality is turned off.
   - When I use unit B on my own home network, the DHCP service of my home router is broadcast correctly through unit B.
 - It shares the same WPS2/PSK key as network A.
 
-C) A computer ( *Unit C* ) with a wifi adaptor. It can current connect to either SSID A or B.
-- It can be configured to use configuration provided by DHCP (config. 1)
-- It can be configured to use ip 192.168.1.62 (config. 2)
+C) A computer ( **Unit C** ) with a wifi adaptor. It can current connect to either SSID A or B.
+- It can be configured to use configuration provided by DHCP ( **configuration 1** .)
+- It can be configured to use ip 192.168.1.62 ( **configuration 2** .)
 
 ## The problem
 
