@@ -70,9 +70,11 @@ After a talk with Wiskey`Wonka of the ##Networking@Freenode IRC channel, a few t
 
 ### Using the OpenWRT wireless firmware may solve the problem.
 - This is reasonable, as this would provide a consistent WDS implementation.
-- This is not a good solution in this case, as I cannot risk damage to the existing Uverse router, it is a good thing to know for future projects.
+- This is not a good solution in this case, as I cannot risk damage to the existing Uverse router
+- It may be a good solution in future projects.
 
-### The best bet is to use another unit of the same manufacturer and chipset, or preferably the exact same model, and adjoin it to unit A via an ethernet connection.
+### The best bet is to use another unit of the same manufacturer and chipset
+- I'd preferably use the exact same model, and adjoin it to unit A via an ethernet connection.
 - This seems like the lowest risk solution.
 
 ### Conclusions
