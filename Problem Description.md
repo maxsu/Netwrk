@@ -77,7 +77,7 @@ After a talk with Wiskey`Wonka of the ##Networking@Freenode IRC channel, a few t
 - I'd preferably use the exact same model, and adjoin it to unit A via an ethernet connection.
 - This seems like the lowest risk solution.
 
-### Conclusions
+# Conclusions
 1. I'm inclined to shy away from solutions requiring modifications to the existing router. If the router gets damaged in my modifications, it will cause outages (and resulting losses) that I cannot cover. 
 2. The strange behavior may be caused by mismatches in the router chipsets. I was lucky that the router worked at home.
 3. To my though, the soundest solution is to purchase an additional TP-link router and deploy it building A.
